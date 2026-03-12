@@ -1,3 +1,10 @@
+/**-------------------------------------------
+* -Nome: Leonardo da Silva Machado - RA:2040482522019
+  -Fatec Ipiranga - Ads Vespertino 
+  -Atividade PEM - semana 3 - Dia 6/03/2026
+  -Objetivo: Desenvolva um programa de cadastro de produtos utilizando a linguagem C. O programa
+deve gerenciar um array de nomes de produtos (strings).           
+  *-------------------------------------------*/
 #include<stdio.h>
 #include<string.h>
     struct Produto{
