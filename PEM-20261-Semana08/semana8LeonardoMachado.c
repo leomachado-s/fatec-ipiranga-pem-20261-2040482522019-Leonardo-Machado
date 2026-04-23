@@ -30,8 +30,10 @@ int main() {
 void processarCarga(float *peso, int tam){
     float soma=0,media;
     for(int i=0;i<tam;i++){
+        // soma os valores do vetor
         soma += *(peso + i);
     }
+    // faz a media, e a aplica os 10% encima do valor
     media = (soma /tam)* 1.1;
     for(int i=0;i<tam;i++){
        if(*(peso + i) > media){
