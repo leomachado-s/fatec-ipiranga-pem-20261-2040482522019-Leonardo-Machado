@@ -5,7 +5,7 @@
 *--------------------------------------------------------*
 * Objetivo do Programa:                                  *
 * gerenciar o peso de carga de 10 pacotes                *
-* Data - 22/04/2026                                      * 
+* Data - 23/04/2026                                      * 
 * Autor: Leonardo machado;2040482522019                  *
 *--------------------------------------------------------*/
 #include<stdio.h>
