@@ -1,0 +1,41 @@
+/*-------------------------------------------------------*
+*                      FATEC Ipiranga                    *
+* Disciplina: Programaçao Estruturada e Modular          *
+*          Prof. Veríssimo                               *
+*--------------------------------------------------------*
+* Objetivo do Programa:                                 *
+* gerenciar o peso de carga de 10 pacotes               *
+* Data - 22/04/2026                                     * 
+* Autor: Leonardo machado;xxxxxxxxxxxxxxxxx             *
+*--------------------------------------------------------*/
+#include<stdio.h>
+
+void processarCarga(float *peso, int tam);
+
+int main() {
+    float carga[10]= {10, 10, 10, 10, 13, 10, 10, 19, 10, 10};
+        printf("Antes:\n");
+    for(int i = 0; i < 10; i++) {
+        printf("%.2f ", carga[i]);
+    }
+    processarCarga(carga, 10);
+
+    printf("\nDepois:\n");
+    for(int i = 0; i < 10; i++) {
+        printf("%.2f ", carga[i]);
+    }
+    return 0;
+}
+
+void processarCarga(float *peso, int tam){
+    float soma=0,media;
+    for(int i=0;i<tam;i++){
+        soma += *(peso + i);
+    }
+    media = (soma /tam)* 1.1;
+    for(int i=0;i<tam;i++){
+       if(*(peso + i) > media){
+            *(peso + i) *=0.95;
+       }
+    }
+}
