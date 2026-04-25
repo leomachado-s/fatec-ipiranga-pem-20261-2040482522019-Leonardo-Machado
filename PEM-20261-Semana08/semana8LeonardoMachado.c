@@ -5,7 +5,11 @@
 *--------------------------------------------------------*
 * Objetivo do Programa:                                  *
 * gerenciar o peso de carga de 10 pacotes                *
+<<<<<<< HEAD
 * Data - 22/04/2026                                      * 
+=======
+* Data - 23/04/2026                                      * 
+>>>>>>> 23715c56e692a9fa52224dfa63fd37ec6a207cf0
 * Autor: Leonardo machado;2040482522019                  *
 *--------------------------------------------------------*/
 #include<stdio.h>
@@ -30,8 +34,10 @@ int main() {
 void processarCarga(float *peso, int tam){
     float soma=0,media;
     for(int i=0;i<tam;i++){
+        // soma os valores do vetor
         soma += *(peso + i);
     }
+    // faz a media, e a aplica os 10% encima do valor
     media = (soma /tam)* 1.1;
     for(int i=0;i<tam;i++){
        if(*(peso + i) > media){
